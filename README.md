@@ -49,18 +49,35 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[byte5](https://byte5.de)**
 - **[OP.GG](https://op.gg)**
 
-## Contributing
+KosanMaps — USU & POLMED Medan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Aplikasi web berbasis GIS (Geographic Information System) yang dirancang untuk memetakan dan menampilkan informasi persebaran kosan di sekitar Universitas Sumatera Utara (USU) dan Politeknik Negeri Medan (POLMED), Kota Medan, Sumatera Utara secara interaktif dan mudah diakses oleh mahasiswa.
 
-## Code of Conduct
+Latar Belakang
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Mahasiswa yang kesulitan menemukan kosan terdekat di sekitar USU dan POLMED beserta informasi harga dan fasilitasnya secara cepat dan akurat mendorong pembuatan aplikasi ini sebagai solusi nyata.
 
-## Security Vulnerabilities
+Fitur Utama
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+🗺️ Peta interaktif persebaran kosan berbasis OpenStreetMap
+🔍 Filter berdasarkan kampus terdekat dan tipe kosan
+📍 Pencarian kosan terdekat dari USU dan POLMED
+ℹ️ Detail informasi & fasilitas setiap kosan
+⭐ Rating dan kategori kosan (Putra/Putri/Campur)
+🔒 Panel admin untuk manajemen data kosan (CRUD)
 
-## License
+🛠️ Teknologi
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Backend: PHP Laravel
+Database: PostgreSQL + PostGIS
+Peta: Leaflet.js + OpenStreetMap
+Frontend: Bootstrap 5 + JavaScript
+
+⚙️ Cara Install
+
+Clone repository git clone https://github.com/ikasianturi278-web/gis-kos-usu-polmed
+Install dependencies composer install
+Copy file environment cp .env.example .env
+Setting database PostgreSQL di .env
+Jalankan migrasi php artisan migrate
+Jalankan serve php artisan serve
